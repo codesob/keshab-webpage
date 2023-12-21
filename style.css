@@ -78,7 +78,6 @@ ul {
 }
 
 
-
 section .screen {
     margin: 2px;
     position: relative;
@@ -147,6 +146,53 @@ section .screen .content h2 {
     color: #ed363a;
 }
 
+/* Add this CSS to your style.css file */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.sec img {
+    width: 100%;
+    height: auto;
+    animation: fadeIn 2s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+/* Add this to your existing CSS */
+.sec .navigation li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.sec .navigation li:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.sec .navigation li:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.sec .navigation li:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+.sec .navigation li:nth-child(4) {
+    transition-delay: 0.8s;
+}
+
+.sec .navigation li:nth-child(5) {
+    transition-delay: 1s;
+}
+
+.sec:hover .navigation li {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 @media (max-width: 768px) {
