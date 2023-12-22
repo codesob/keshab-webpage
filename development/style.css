@@ -70,16 +70,16 @@ ul {
     z-index: 1;
 }
 
-
 .split {
     position: relative;
-    height: 100vh;
+    height: 60vh;
     display: flex;
+    background-color: #ccc;
+    align-items: center;
+    justify-content: center;
 }
 
-
-section .screen {
-    margin: 2px;
+.split .screen {
     position: relative;
     flex-grow: 2;
     display: flex;
@@ -90,37 +90,37 @@ section .screen {
     transition: 1s;
 }
 
-section:hover .screen {
+.split:hover .screen {
     opacity: 0.1;
 }
 
-section .screen:hover {
+.split .screen:hover {
     flex-grow: 5;
     opacity: 1;
 }
 
-section .screen:nth-child(1) {
+.split .screen:nth-child(1) {
     background: url(./img1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-section .screen:nth-child(2) {
+.split .screen:nth-child(2) {
     background: url(img2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-section .screen:nth-child(3) {
+.split .screen:nth-child(3) {
     background: url(img3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-section .screen .content {
+.split .screen .content {
     position: absolute;
     margin-top: 200px;
     width: 45%;
@@ -133,12 +133,12 @@ section .screen .content {
     text-align: justify;
 }
 
-section .screen:hover .content {
+.split .screen:hover .content {
     transform: translateX(0);
     transition-delay: 1s;
 }
 
-section .screen .content h2 {
+.split .screen .content h2 {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
@@ -146,7 +146,31 @@ section .screen .content h2 {
     color: #ed363a;
 }
 
-/* Add this CSS to your style.css file */
+.title {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    animation: fadeIn 1s ease-in forwards;
+    background-color: #ccc; 
+}
+
+.split .screen {
+    padding: 10px; 
+    border: 1px solid #302f2f; 
+}
+
+.footer {
+    background-color: #757070;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -159,14 +183,13 @@ section .screen .content h2 {
 .sec img {
     width: 100%;
     height: auto;
-    animation: fadeIn 2s ease-in-out; /* Adjust the duration and easing as needed */
+    animation: fadeIn 1s ease-in; 
 }
 
-/* Add this to your existing CSS */
 .sec .navigation li {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    transition: opacity 0.4s ease-in, transform 0.4s ease-in;
 }
 
 .sec .navigation li:nth-child(1) {
@@ -193,7 +216,7 @@ section .screen .content h2 {
     opacity: 1;
     transform: translateY(0);
 }
-
+ 
 
 @media (max-width: 768px) {
     .container {
