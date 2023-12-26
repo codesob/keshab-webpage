@@ -52,7 +52,7 @@ function App() {
         </div>
       </section>
       <footer className="footer">
-        <img src="./keshab.png" alt="" />
+        <img src={logo} alt="" />
         <p>Gyaneshwor, Kathmandu, Nepal</p>
         <p>&copy; 2023 Altter Keshab Private Limited. All rights reserved.</p>
       </footer>
