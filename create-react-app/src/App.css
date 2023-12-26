@@ -233,7 +233,7 @@ ul {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .container {
       width: 100%;
       height: auto;
@@ -305,7 +305,7 @@ ul {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1224px) {
   .container {
       width: 100%;
       max-width: 100%;
@@ -313,7 +313,7 @@ ul {
   }
 
   .navigation {
-      top: 35%;
+      top: 25%;
       left: 45%;
       transform: translateX(-50%);
       font-size: 30px;
@@ -402,10 +402,10 @@ ul {
   }
 
   .navigation {
-      top: 20%;
+      top:35%;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 25px;
+      font-size: 20px;
   }
 
   .moon-image,
@@ -419,8 +419,8 @@ ul {
 
   .overlay-image {
       width: 100%;
-      max-width: 130px;
-      left: 215px;
+      max-width: 100px;
+      left: 140px;
       height: auto;
       position: absolute;
       bottom: 0;
@@ -440,10 +440,10 @@ ul {
   .background-image {
     width: 100%;
     height: auto;
-    max-width: 240px;
+    max-width: 180px;
     position: absolute;
     bottom: 0;
-    left: 160px;
+    left: 100px;
     z-index: 1;
   }
   
@@ -479,40 +479,4 @@ ul {
 }
 
 
-@media (max-width: 320px) {
-  .split {
-    height: auto;
-    flex-direction: column;
-  }
-
-  .split .screen {
-    height: auto;
-    flex-grow: 1;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .split .screen .content {
-    width: 90%;
-    margin: 20px auto;
-    transform: translateY(0);
-    transition: none;
-  }
-
-  .split .screen:hover .content {
-    transform: translateY(0);
-  }
-
-  .split .screen:nth-child(1),
-  .split .screen:nth-child(2),
-  .split .screen:nth-child(3) {
-    background-position: center;
-    background-size: cover;
-  }
-
-  .title {
-    font-size: 24px;
-    padding-top: 20px;
-  }
-}
 
