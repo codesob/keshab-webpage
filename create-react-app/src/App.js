@@ -1,11 +1,13 @@
 
 import React from 'react';
+import { BrowserRouter, Link } from 'react-router-dom';
 import './App.css';
 import moon from './Artboard 1.png';
 import logo from './keshab.png';
 import keshab from './Acerlogo.png';
 function App() {
   return (
+    <BrowserRouter>
     <div>
       <section className="sec">
         <div className="container">
@@ -14,13 +16,13 @@ function App() {
               <p>Phone: 01-5347058</p>
             </div>
             <div className="navigation">
-              <ul>
-                <li><a href="/" className="about">About</a></li>
-                <li><a href="design.html" className="design">Design & Print</a></li>
-                <li><a href="portfolio.html" className="portfolio">Portfolio</a></li>
-                <li><a href="digital.html" className="digital-promotion">Digital Promotion</a></li>
-                <li><a href="contact.html" className="contact">Contact</a></li>
-              </ul>
+            <ul>
+            <li><Link className='a' to="/">About</Link></li>
+            <li><Link to="/design">Design & Print</Link></li>
+            <li><Link to="/portfolio">Portfolio</Link></li>
+            <li><Link to="/digital">Digital Promotion</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          </ul>
             </div>
             <img src={moon} alt="" className="moon-image" />
             <img src={keshab} alt="" className="background-image" />
@@ -57,6 +59,7 @@ function App() {
         <p>&copy; 2023 Altter Keshab Private Limited. All rights reserved.</p>
       </footer>
     </div>
+    </BrowserRouter>
   );
 }
 
