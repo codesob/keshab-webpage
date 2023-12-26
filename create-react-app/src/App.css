@@ -342,7 +342,7 @@ ul {
     max-width: 250px;
     position: absolute;
     bottom: -10px;
-    left: 190px;
+    left: 188px;
     z-index: 1;
   }
   
@@ -389,13 +389,13 @@ ul {
   .title {
       font-size: 24px;
       padding-top: 20px;
-      /* Adjust padding for better spacing */
+     
   }
 }
 
 
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   .container {
       width: 100%;
       height: auto;
@@ -443,7 +443,7 @@ ul {
     max-width: 240px;
     position: absolute;
     bottom: 0;
-    left: 165px;
+    left: 160px;
     z-index: 1;
   }
   
@@ -477,3 +477,42 @@ ul {
       padding-top: 20px;
   }
 }
+
+
+@media (max-width: 320px) {
+  .split {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .split .screen {
+    height: auto;
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .split .screen .content {
+    width: 90%;
+    margin: 20px auto;
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .split .screen:hover .content {
+    transform: translateY(0);
+  }
+
+  .split .screen:nth-child(1),
+  .split .screen:nth-child(2),
+  .split .screen:nth-child(3) {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .title {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+}
+
